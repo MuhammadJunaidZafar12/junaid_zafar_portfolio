@@ -44,7 +44,7 @@ export const Hero = () => {
           <div className="hero-copy">
             <div className="eyebrow-pill hero-load-item hero-load-item-1">
               <span className="eyebrow-dot" />
-              Trusted By 100+ Clients
+              Trusted By Clients Worldwide
             </div>
 
             <div className="hero-heading-block hero-load-item hero-load-item-2">
