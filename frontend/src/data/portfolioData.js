@@ -14,7 +14,7 @@ export const portfolioData = {
     headline: "Building modern, scalable web applications with MERN, Next.js, REST APIs, real-time systems, and Python/FastAPI.",
     email: "junaidzafar434@gmail.com",
     phone: "+92 346 1255799",
-    location: "Faisalabad, Pakistan",
+    location: "Lahore, Pakistan",
     linkedinUrl: "https://linkedin.com/in/junaid-zafar70",
     githubUrl: "https://github.com/MuhammadJunaidZafar12",
     resumeUrl: "../assets/Junaid Zafar - Full Stack Developer - Resume.pdf",
