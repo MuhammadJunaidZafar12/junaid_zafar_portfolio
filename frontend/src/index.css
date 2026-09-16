@@ -694,6 +694,25 @@ img {
   border-bottom-color: var(--border);
 }
 
+.navbar-brand-mark {
+  @apply grid size-10 shrink-0 place-items-center rounded-2xl;
+  color: #fff4e8;
+  background: linear-gradient(135deg, rgba(255,117,31,0.95), rgba(255,179,71,0.85));
+  box-shadow: 0 10px 30px var(--accent-glow);
+  transform: rotate(-3deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar-brand-mark svg {
+  @apply size-8;
+  transform: rotate(3deg);
+}
+
+.navbar-brand-mark:hover {
+  transform: rotate(0deg) translateY(-2px);
+  box-shadow: 0 14px 34px var(--accent-glow);
+}
+
 .navbar-desktop { @apply hidden; }
 .navbar-mobile { @apply flex; }
 .navbar-menu-overlay { @apply fixed inset-x-0 bottom-0 top-16 z-[99] flex-col items-center justify-center gap-2; }

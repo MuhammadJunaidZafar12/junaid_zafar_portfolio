@@ -67,7 +67,11 @@ export const Hero = () => {
                 Start a Project
                 <ArrowUpRight size={16} strokeWidth={2.5} />
               </a>
-              <a href={personal.resumeUrl === '#' ? '#contact' : personal.resumeUrl} className="btn btn-outline" onClick={personal.resumeUrl === '#' ? e => { e.preventDefault(); const el = document.getElementById('contact'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' }); } : undefined}>
+              <a
+                href={personal.resumeUrl}
+                download="Muhammad-Junaid-Zafar-Resume.pdf"
+                className="btn btn-outline"
+              >
                 <Download size={15} strokeWidth={2.5} />
                 Download Resume
               </a>

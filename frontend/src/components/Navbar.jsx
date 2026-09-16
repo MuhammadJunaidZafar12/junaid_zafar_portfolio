@@ -89,22 +89,11 @@ export const Navbar = ({ activeSection }) => {
             }}
             style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', flexShrink: 0, textDecoration: 'none' }}
           >
-            <span style={{
-              width: '38px',
-              height: '38px',
-              borderRadius: '50%',
-              background: 'linear-gradient(135deg, var(--accent), var(--accent-yellow))',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: "'Space Grotesk', sans-serif",
-              fontWeight: 700,
-              fontSize: '0.82rem',
-              color: '#fff',
-              flexShrink: 0,
-              boxShadow: '0 10px 30px var(--accent-glow)',
-            }}>
-              SJM
+            <span className="navbar-brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M12 16 7 24l5 8M36 16l5 8-5 8" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                <text x="24" y="29" textAnchor="middle" fill="currentColor" fontSize="13" fontWeight="700" fontFamily="Space Grotesk, sans-serif">JZ</text>
+              </svg>
             </span>
             <span style={{
               fontFamily: "'Space Grotesk', sans-serif",
