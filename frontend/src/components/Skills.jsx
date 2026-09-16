@@ -115,52 +115,19 @@ const Skills = () => {
       className="skills-section"
     >
       {/* Background Orange Glow */}
-      <div className="skills-glow" />
+      {/*<div className="skills-glow" />*/}
 
       <div className="skills-layout">
 
-        {/* ================= LEFT SIDE ================= */}
+        {/* Shared section heading */}
         <div className="skills-sidebar">
-
-          {/* Heading */}
-          <div className="skills-sidebar-inner">
-            <div className="skills-heading-row">
-              <span className="skills-heading-dot" />
-
-              <h2
-                className="skills-title"
-                style={{
-                  fontFamily: "Impact, sans-serif",
-                }}
-              >
-                Skills
-              </h2>
-            </div>
-
-            {/* Vertical Line */}
-            <div className="skills-divider">
-
-              {/* Orange Line */}
-              <div className="skills-divider-fill" />
-
-              {/* Glow Dot */}
-              <div className="skills-divider-dot" />
+          <div className="skills-section-heading">
+            <div className="section-label">Skills</div>
+            <h2 className="section-title">Technical Skills</h2>
+            <div className="section-divider">
+              <div className="section-divider-fill" />
             </div>
           </div>
-        </div>
-
-        {/* ================= MOBILE HEADING ================= */}
-        <div className="skills-mobile-heading">
-          <span className="skills-heading-dot" />
-
-          <h2
-            className="skills-title skills-title-mobile"
-            style={{
-              fontFamily: "Impact, sans-serif",
-            }}
-          >
-            Skills
-          </h2>
         </div>
 
         {/* ================= SKILLS GRID ================= */}
