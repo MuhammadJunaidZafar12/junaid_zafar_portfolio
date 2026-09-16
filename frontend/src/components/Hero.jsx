@@ -42,27 +42,27 @@ export const Hero = () => {
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-layout">
           <div className="hero-copy">
-            <div className="eyebrow-pill">
+            <div className="eyebrow-pill hero-load-item hero-load-item-1">
               <span className="eyebrow-dot" />
               Trusted By 100+ Clients
             </div>
 
-            <div className="hero-heading-block">
+            <div className="hero-heading-block hero-load-item hero-load-item-2">
               <p className="hero-small-label">Hi, I'm</p>
               <h1 className="font-display hero-title">
                 {personal.firstName} <span>{personal.lastName || 'Zafar'}</span>
               </h1>
             </div>
 
-            <div className="role-rotator-wrap">
+            <div className="role-rotator-wrap hero-load-item hero-load-item-3">
               <p className="hero-role" style={{ opacity: visible ? 1 : 0, transform: visible ? 'translateY(0)' : 'translateY(6px)' }}>
                 {ROLES[roleIdx]}
               </p>
             </div>
 
-            <p className="hero-subtitle">Websites That Turn Visitors Into Clients</p>
+            <p className="hero-subtitle hero-load-item hero-load-item-4">Websites That Turn Visitors Into Clients</p>
 
-            <div className="hero-actions">
+            <div className="hero-actions hero-load-item hero-load-item-5">
               <a href="#contact" onClick={e => { e.preventDefault(); const el = document.getElementById('contact'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' }); }} className="btn btn-primary">
                 Start a Project
                 <ArrowUpRight size={16} strokeWidth={2.5} />
@@ -78,7 +78,7 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className="hero-visual-wrap">
+          <div className="hero-visual-wrap hero-load-visual">
             <div className="hero-portrait-shell">
               <img
                 src={profile}

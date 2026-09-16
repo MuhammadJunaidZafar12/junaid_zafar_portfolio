@@ -6,7 +6,7 @@ export const MarqueeTicker = () => {
   const items = [...marquee, ...marquee]; // duplicate for seamless loop
 
   return (
-    <div style={{
+    <div className="marquee-load" style={{
       width: '100%',
       borderTop: '1px solid var(--border)',
       borderBottom: '1px solid var(--border)',

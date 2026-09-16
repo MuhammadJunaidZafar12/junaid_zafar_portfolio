@@ -915,6 +915,35 @@ img {
   @apply grid grid-cols-1 items-center gap-8;
 }
 
+.hero-load-item,
+.hero-load-visual,
+.marquee-load {
+  opacity: 0;
+  animation: landingReveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-load-item-1 { animation-delay: 120ms; }
+.hero-load-item-2 { animation-delay: 220ms; }
+.hero-load-item-3 { animation-delay: 340ms; }
+.hero-load-item-4 { animation-delay: 460ms; }
+.hero-load-item-5 { animation-delay: 580ms; }
+.hero-load-visual { animation-delay: 280ms; }
+.marquee-load { animation-delay: 720ms; }
+
+@keyframes landingReveal {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-load-item,
+  .hero-load-visual,
+  .marquee-load {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 @media (min-width: 881px) {
   .hero-layout {
     @apply grid-cols-[1.2fr_0.8fr] gap-16;
