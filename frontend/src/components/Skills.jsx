@@ -74,7 +74,6 @@ const skillCategories = [
   {
     name: "Programming Languages",
     skills: [
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "Java", icon: Code2, color: "#F89820" },
       { name: "C++", icon: SiCplusplus, color: "#00599C" },

@@ -26,6 +26,28 @@ export const Hero = () => {
     if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' });
   };
 
+  const handleResumeDownload = async (event) => {
+    event.preventDefault();
+    const filename = 'Muhammad-Junaid-Zafar-Resume.pdf';
+
+    try {
+      const response = await fetch(personal.resumeUrl);
+      if (!response.ok) throw new Error('Resume download failed');
+
+      const resumeBlob = await response.blob();
+      const downloadUrl = URL.createObjectURL(resumeBlob);
+      const downloadLink = document.createElement('a');
+      downloadLink.href = downloadUrl;
+      downloadLink.download = filename;
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      downloadLink.remove();
+      window.setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+    } catch {
+      window.open(personal.resumeUrl, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <section
       style={{
@@ -70,6 +92,7 @@ export const Hero = () => {
               <a
                 href={personal.resumeUrl}
                 download="Muhammad-Junaid-Zafar-Resume.pdf"
+                onClick={handleResumeDownload}
                 className="btn btn-outline"
               >
                 <Download size={15} strokeWidth={2.5} />
