@@ -19,7 +19,7 @@ export const portfolioData = {
     linkedinUrl: "https://linkedin.com/in/junaid-zafar70",
     githubUrl: "https://github.com/MuhammadJunaidZafar12",
     resumeUrl: resumeFile,
-    bio: "BS Computer Science graduate from Government College University Faisalabad (CGPA: 3.2/4.0) with hands-on professional experience in full-stack development. I specialize in the MERN stack — building scalable RESTful APIs, responsive React/Next.js frontends, MongoDB databases, and JWT-based authentication systems. I have integrated real-time features using Socket.IO, built admin and owner dashboards, and combined Python FastAPI with machine learning models in production applications. I care about writing clean, maintainable code and delivering solid end-to-end engineering."
+    bio: "BS Computer Science graduate from National University of Computer and Emerging Sciences (CGPA: 3.2/4.0) with hands-on professional experience in full-stack development. I specialize in the MERN stack — building scalable RESTful APIs, responsive React/Next.js frontends, MongoDB databases, and JWT-based authentication systems. I have integrated real-time features using Socket.IO, built admin and owner dashboards, and combined Python FastAPI with machine learning models in production applications. I care about writing clean, maintainable code and delivering solid end-to-end engineering."
   },
 
   socials: [
@@ -261,8 +261,8 @@ export const portfolioData = {
       id: "edu-bscs",
       degree: "Bachelor of Science in Computer Science",
       short: "BSCS",
-      institution: "Government College University Faisalabad",
-      short_institution: "GCUF",
+      institution: "National University of Computer and Emerging Sciences (FAST)",
+      short_institution: "FAST",
       cgpa: "3.2 / 4.0",
       status: "Graduated",
       focus: ["Data Structures & Algorithms", "Database Systems", "Software Engineering", "Computer Networks", "Operating Systems"],
