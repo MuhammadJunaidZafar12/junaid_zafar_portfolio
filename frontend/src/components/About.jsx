@@ -50,7 +50,7 @@ export const About = () => {
 
               {/* Credential pill */}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.625rem', marginTop: '0.25rem' }}>
-                <span className="badge badge-accent">🎓 BSCS — GCUF (3.2/4.0)</span>
+                <span className="badge badge-accent">🎓 BSCS — FAST (3.2/4.0)</span>
                 <span className="badge badge-accent">📍 Lahore, Pakistan</span>
                 <span className="badge badge-neutral">Available for Remote / On-site</span>
               </div>
